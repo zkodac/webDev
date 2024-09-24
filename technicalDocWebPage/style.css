@@ -1,0 +1,62 @@
+body {
+    margin:0;
+}
+
+div.main-body {
+    background-color: rgb(208, 216, 224);
+    display: grid;
+    grid-template-columns: minmax(300px,auto) 1fr;
+    grid-template-areas: "navigation mainDoc";
+    grid-gap: 10px;
+}
+
+.navigation {
+    grid-area: navigation;
+    height: 91vh;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left:20px;
+    border-radius: 10px;
+    border: solid black;
+    position: fixed;
+    background-color: lightblue;
+}
+
+nav#navbar {
+    position: relative;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main#main-doc {
+    grid-area: main-doc;
+    border-radius: 10px;
+    border: black solid;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+code {
+    background-color: lightgray;
+    border-radius: 10px;
+    border: solid black;
+    border-width: 1px;
+    width: 250px;
+    display: block;
+};

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-body">
+        <div class="navigation">
+            <nav id="navbar">
+                <header>Documentation Menu</header>
+                <a href="#Intro" class="nav-link">
+                    What is C++
+                </a>
+                <a href="#Object" class="nav-link">
+                    Objects and Classes
+                </a>
+                <a href="#Inheritance" class="nav-link">
+                    Inheritance
+                </a>
+                <a href="#Polymorphism" class="nav-link">
+                    Polymorphism
+                </a>
+                <a href="#Abstraction" class="nav-link">
+                    Abstraction
+                </a>
+                <a href="#Encapsulation" class="nav-link">
+                    Encapsulation
+                </a>
+            </nav>
+        </div>
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <Header>What is C++</Header>
+                <p>
+                    C++ is a powerful, general-purpose programming language widely used 
+                    for systems programming, application development, game development, 
+                    and embedded systems. One of the core features of C++ is its support 
+                    for functions, which allow for modularity and code reuse. A basic 
+                    function in C++ is a reusable block of code that performs a specific 
+                    task. It consists of a return type, a name, a parameter list (which 
+                    may be empty), and a body.
+
+                    <br><br>Consider the following c++ addition function:
+                </p>
+                <pre>
+                <code>
+    int add(int a, int b) {
+        return a + b;
+    }
+                </code>
+                </pre>
+
+                <p>C++ is an Object Oriented Programming Language
+                    <br> The main Pillars of Object Oriented Programming are:
+                </p>
+                <ul>
+                    <li>Objects and Classes</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Abstraction</li>
+                    <li>Encapsulation</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Object">
+                <Header>Objects and Classes</Header>
+                <p>
+                    In Object-Oriented Programming (OOP), objects and classes 
+                    are fundamental concepts that help organize code and model 
+                    real-world entities in a structured way.
+                </p>
+                <p>
+                    Classes:
+                    <br><br>A class is a blueprint or template that defines 
+                    the properties (attributes) and behaviors (methods or 
+                    functions) of objects. It serves as a blueprint for 
+                    creating multiple objects with similar characteristics. 
+                    For example, if you were designing a program to represent 
+                    cars, you would create a Car class that outlines attributes 
+                    such as color, make, and model, as well as methods like drive()
+                    or stop()
+                </p>
+                <p>
+                    Objects:
+                    <br><br>An object is an instance of a class. It represents a 
+                    specific entity that has the properties and behaviors defined 
+                    by its class. Once a class is defined, you can create objects from it. 
+                </p>
+            </section>
+            <section class="main-section" id="Inheritance">
+                <Header>Inheritance</Header>
+                <p>
+                    In software development, inheritance is a key concept in object-oriented 
+                    programming (OOP) that allows a class (called the derived class or 
+                    subclass) to inherit properties and behaviors (attributes and methods) 
+                    from another class (called the base class or superclass). This promotes 
+                    code reusability and helps organize code in a hierarchical manner. By 
+                    using inheritance, developers can create new classes based on existing 
+                    ones, avoiding redundancy and enhancing maintainability.
+                </p>
+                <p>
+                    For example, in a system modeling different types of vehicles, you might 
+                    have a base class Vehicle that defines common attributes like speed and 
+                    fuelCapacity, along with methods like move() or refuel(). A subclass, 
+                    such as Car, can inherit these attributes and behaviors from Vehicle 
+                    but also define its own specific methods, such as turnOnAirConditioner().
+                </p>
+                <p>I
+                    nheritance supports the "is-a" relationship; a car is a vehicle, so it 
+                    makes sense for Car to inherit from Vehicle. In addition, it allows 
+                    polymorphism, where a derived class can override methods of the base 
+                    class to implement more specialized behavior.
+                </p>
+            </section>
+            <section class="main-section" id="Polymorphism">
+                <Header>Polymorphism</Header>
+                <p>
+                    In software development, inheritance is a key concept in object-oriented 
+                    programming (OOP) that allows a class (called the derived class or 
+                    subclass) to inherit properties and behaviors (attributes and methods) 
+                    from another class (called the base class or superclass). This promotes 
+                    code reusability and helps organize code in a hierarchical manner. By 
+                    using inheritance, developers can create new classes based on existing 
+                    ones, avoiding redundancy and enhancing maintainability.
+                </p>
+            </section>
+            <section class="main-section" id="Abstraction">
+                <Header>Abstraction</Header>
+                <p>
+                    Abstraction in Object-Oriented Programming (OOP) is a design principle 
+                    that focuses on simplifying complex systems by modeling only the essential 
+                    features while hiding unnecessary details. It enables developers to 
+                    manage complexity by providing clear interfaces and abstracting away 
+                    implementation details. In practice, abstraction is achieved through 
+                    abstract classes and interfaces, where only the relevant methods and 
+                    properties needed by the user are exposed, while the inner workings 
+                    are concealed.
+                </p>
+                <p>
+                    For example, when interacting with a car, you only need to know how to start, 
+                    stop, or accelerate it. You don't need to understand the intricate details of 
+                    the engine’s operation. In OOP, abstraction allows developers to define functions 
+                    or methods that perform specific tasks without revealing how they are executed internally
+                </p>
+                <p>
+                    By using abstraction, software systems become easier to develop and maintain. It improves 
+                    code readability, enhances reusability, and provides a clear separation of concerns, 
+                    allowing developers to focus on what a class or object does rather than how it works.
+                </p>
+            </section>
+            <section class="main-section" id="Encapsulation">
+                <Header>Encapsulation</Header>
+                <p>
+                    Encapsulation is a key concept in coding, especially in object-oriented programming (OOP), 
+                    that involves bundling data (attributes) and methods (functions) into a single unit, or class, 
+                    and restricting direct access to some of an object’s components. This is typically done by 
+                    making attributes private and providing public getter and setter methods to interact with them. 
+                    Encapsulation helps protect the internal state of an object from unintended interference or misuse, 
+                    ensuring data integrity. It also promotes modularity and maintainability, as changes to the 
+                    internal implementation do not affect other parts of the program that rely on the class’s 
+                    public interface.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
